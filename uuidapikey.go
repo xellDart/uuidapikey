@@ -129,13 +129,8 @@ func Check(uuid, apiKey string) bool {
 }
 
 // Create will create new UUID and API Key
-func Create() string {
+func Create() (string, string) {
 	uuid := goid.NewV4UUID().String()
 	apiKey := ToAPIKey(uuid)
-	pair := map[string]string{"uuid": uuid, "apiKey": apiKey}
-	jsonPair, err := json.Marshal(pair)
-	if err != nil {
-		panic("Error creating a new pair of keys")
-	}
-	return string(jsonPair)
+	return apiKey, uuid
 }
