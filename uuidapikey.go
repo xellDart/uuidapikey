@@ -17,7 +17,6 @@ package uuidapikey
 
 // Dependencies
 import (
-	"encoding/json"
 	"regexp"
 	"strconv"
 	"strings"
