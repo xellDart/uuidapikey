@@ -16,12 +16,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/siesgstarena/uuidapikey"
+	"github.com/xellDart/uuidapikey"
 )
 
 func main() {
 
-	fmt.Println(uuidapikey.Create())
+	pKey, uuid := uuidapikey.Create()
 }
 
 ```
