@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/JakeHL/Goid"
+	"github.com/jakehl/goid"
 )
 
 // checkDashes to verify dashes in given UUID
